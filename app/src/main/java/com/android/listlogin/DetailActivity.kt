@@ -18,7 +18,7 @@ class DetailActivity : AppCompatActivity() {
 
     private fun setUpFacts(){
         adapter = FactAdapter(this, DummyData.funFacts)
-        binding?.factListView?.adapter
+        binding?.factListView?.adapter = adapter
     }
 
     override fun onDestroy() {
